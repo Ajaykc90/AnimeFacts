@@ -1,0 +1,27 @@
+.facts{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+    position: absolute;
+    top: 150px;
+    bottom: 0;
+    background-color: #aaa;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   
+}
+.factTitle{
+    text-align: center;
+}
+ol{
+    padding:0px 50px;
+}
+ol > li{
+
+    font-size: 20px;
+}

@@ -1,38 +1,61 @@
-.App {
+.App{
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+.navbar{
+  margin:0px;
+  padding:20px;
+  background: radial-gradient(circle, rgba(88,33,57,1) 0%, rgba(31,13,219,1) 100%);
+  color:#fefefe;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.animeList{
+  padding:40px;
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  place-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media(max-width:1900px){
+  .animeList{
+   padding:20px;
+    display:grid;
+  grid-template-columns: repeat(3,1fr);
+  place-items: center;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media(max-width:1500px){
+  .animeList{
+   padding:20px;
+    display:grid;
+  grid-template-columns: repeat(2,1fr);
+  place-items: center;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media(max-width:1025px){
+  .animeList{
+   padding:50px;
+    display:grid;
+  grid-template-columns: repeat(1,1fr);
+  place-items: center;
   }
+}
+@media(max-width:925px){
+  .animeList{
+   padding:10px;
+    display:grid;
+  grid-template-columns: repeat(1,1fr);
+  place-items: center;
+  }
+}
+@media(max-width:600px){
+  .animeList{
+    padding:5px;
+     display:grid;
+   grid-template-columns: repeat(1,1fr);
+   place-items: center;
+   }
 }
