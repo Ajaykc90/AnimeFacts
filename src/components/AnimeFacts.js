@@ -5,14 +5,12 @@ import "./animefacts.css";
 
 const AnimeFacts = () => {
     const { name } = useParams();
-    console.log(name);
     const [facts, setFacts] = useState([]);
     useEffect(() => {
         async function getList() {
             const facts = await animeFacts(name);
             setFacts(facts);
         };
-        console.log(facts);
         getList();
     }, [name])
 
